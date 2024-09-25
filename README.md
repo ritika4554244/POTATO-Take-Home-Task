@@ -34,12 +34,15 @@ This project implements a Flask-based API that queries a dataset of tweets and p
 ---
 
 ## Table of Contents
-- [Features](#features)
-- [Libraries](#Libraries)
-- [File Structure](#fileStructure)
-- [Installation](#installation)
-- [Application Screenshot](ApplicationScreenshot)
-- [License](#license)
+- [✨ Featuresfeatures)
+- [📚 Libraries](#Libraries)
+- [📁 File Structure](#fileStructure)
+- [📝 Explanation of Important Files](#ExplanationofImportantFiles)
+- [🚀 Setup Instructions](#SetupInstructions)
+- [💡 Design Choices](#DesignChoices)
+- [💻 Installation](#installation)
+- [📸 Application Screenshot](#ApplicationScreenshot)
+- [📜 License](#license)
 
 
 ## ✨ Features
@@ -63,7 +66,7 @@ This project implements a Flask-based API that queries a dataset of tweets and p
 
 
 
-## Libraries
+## 📚 Libraries
 
 This project uses the following libraries:
 
@@ -96,9 +99,12 @@ This project uses the following libraries:
 ```
 
 ## 📝 Explanation of Important Files
-- **`app.py`**: The main application script that sets up the Flask server and handles querying of the dataset.
-- **`Dockerfile`**: A configuration file that helps you run the project in a Docker container for easier setup.
-- **`templates/home.html`**: A basic HTML page that allows users to search for a term via a form.
+- **app.py**: The main application script that sets up the Flask server and handles querying of the dataset.
+- **Dockerfile**: A configuration file that helps you run the project in a Docker container for easier setup.
+- **templates/home.html**: A basic HTML page that allows users to search for a term via a form.
+- **dataset/**: Contains the datasets used in the project:
+  - `cleaned.tsv`: The cleaned version of the dataset with ETL processes applied, ready for querying.
+  - `twitter.tsv`: The original raw dataset used for analysis.
 
 ## 🚀 Setup Instructions
 
@@ -115,7 +121,7 @@ Make sure you have the following installed:
 - **Docker**: Provides an easy way to package the application along with its dependencies so it can run consistently across different environments.
 
 
-## Installation
+## 💻 Installation
 
 ### Clone the Repository
 ```bash
@@ -136,7 +142,7 @@ You can run the Flask application directly:
 ```bash
 python app.py
 ```
-## Application Screenshot
+## 📸 Application Screenshot
 
 Here’s a screenshot of the application in action:
 
